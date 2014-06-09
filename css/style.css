@@ -1,0 +1,36 @@
+body {
+  margin-top: 60px;
+}
+
+.form-control.underline {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  border-color: #ccc;
+}
+
+.task-form {
+  padding-left: 65px;
+}
+
+.task-form input[type="text"] {
+  width: 80%;
+}
+
+.tasks-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.tasks-list li {
+  
+}
+
+.tasks-list input[type="checkbox"] {
+  margin-right: 5px;
+}

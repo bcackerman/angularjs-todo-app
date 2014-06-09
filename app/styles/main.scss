@@ -1,0 +1,76 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  margin-top: 20px;
+}
+
+.brand-name {
+  text-transform: uppercase;
+  font-size: 12px; 
+  letter-spacing: 2px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 100px;
+  padding: 3px 12px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.form-control.underline {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 22px;
+}
+
+.form-control:focus {
+  border-color: #ccc;
+}
+
+.task-form {
+}
+
+.task-form input[type="text"] {
+  width: 80%;
+}
+
+.tasks-list {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+
+  li {
+    line-height: 36px;
+
+    a {
+      color: #333;
+    }
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .completed {
+    @extend .text-muted;
+  }
+}
+
+

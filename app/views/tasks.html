@@ -1,0 +1,25 @@
+<div class="container" ng-controller="tasksController">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1 class="brand-name">Task App</h1>
+
+      <ul class="tasks-list" formatTasks>
+        <li ng-repeat="task in tasks | orderBy:'created'">
+          <input type="checkbox" ng-model="task.completed" ng-checked="task.completed" ng-change="toggleTask(task)" />
+          <a href="#/task/{{task.id}}">
+            <span ng-bind="task.name" ng-class="{'completed' : task.completed}"></span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="clearfix"></div>
+
+      <div class="form-inline task-form">
+        <form name="taskForm" ng-submit="taskForm.$valid && addTask()">
+          <input type="text" class="form-control underline" ng-model="name" required placeholder="add a new task" />
+          <!-- <button type="submit" class="btn btn-link">Add</button> -->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
